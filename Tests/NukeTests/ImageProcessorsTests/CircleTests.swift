@@ -2,6 +2,7 @@
 //
 // Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
+#if canImport(Darwin)
 import XCTest
 @testable import Nuke
 
@@ -139,4 +140,5 @@ class ImageProcessorsCircleTests: XCTestCase {
         XCTAssertEqual(color.hex, "#FF0000")
     }
 }
+#endif
 #endif

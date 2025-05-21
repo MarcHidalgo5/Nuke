@@ -2,6 +2,7 @@
 //
 // Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
+#if canImport(Darwin)
 import Foundation
 import CoreGraphics
 
@@ -94,3 +95,4 @@ struct ImageTargetSize: Hashable {
         hasher.combine(cgSize.height)
     }
 }
+#endif

@@ -2,6 +2,7 @@
 //
 // Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
+#if canImport(Darwin)
 import Foundation
 
 #if !os(macOS)
@@ -105,3 +106,4 @@ func == (lhs: [any ImageProcessing], rhs: [any ImageProcessing]) -> Bool {
         $0.hashableIdentifier == $1.hashableIdentifier
     }
 }
+#endif

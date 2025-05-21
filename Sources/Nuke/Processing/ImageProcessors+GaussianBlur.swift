@@ -2,6 +2,7 @@
 //
 // Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
+#if canImport(Darwin)
 #if os(iOS) || os(tvOS) || os(macOS) || os(visionOS)
 
 import Foundation
@@ -49,4 +50,5 @@ extension ImageProcessors {
     }
 }
 
+#endif
 #endif

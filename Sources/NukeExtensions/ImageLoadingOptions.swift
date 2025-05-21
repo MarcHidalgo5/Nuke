@@ -2,6 +2,7 @@
 //
 // Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
+#if canImport(Darwin)
 import Foundation
 import Nuke
 
@@ -226,3 +227,4 @@ public struct ImageLoadingOptions {
         case success, failure, placeholder
     }
 }
+#endif

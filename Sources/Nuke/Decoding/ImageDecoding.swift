@@ -2,6 +2,7 @@
 //
 // Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
+#if canImport(Darwin)
 import Foundation
 
 /// An image decoder.
@@ -62,3 +63,4 @@ extension ImageDecoding {
         return ImageResponse(container: container, request: context.request, urlResponse: context.urlResponse, cacheType: context.cacheType)
     }
 }
+#endif

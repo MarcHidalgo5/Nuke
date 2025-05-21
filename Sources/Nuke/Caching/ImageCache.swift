@@ -1,7 +1,7 @@
 // The MIT License (MIT)
 //
 // Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
-
+#if canImport(Darwin)
 import Foundation
 #if !os(macOS)
 import UIKit
@@ -114,3 +114,4 @@ public final class ImageCache: ImageCaching {
         return cgImage.bytesPerRow * cgImage.height + dataCost
     }
 }
+#endif
