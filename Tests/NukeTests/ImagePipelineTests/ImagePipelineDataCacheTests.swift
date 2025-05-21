@@ -2,6 +2,7 @@
 //
 // Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
+#if canImport(Darwin)
 import XCTest
 @testable import Nuke
 
@@ -755,3 +756,4 @@ class ImagePipelineDataCachePolicyTests: XCTestCase {
         XCTAssertTrue(dataCache.containsData(for: "http://test.com/example.jpeg"))
     }
 }
+#endif

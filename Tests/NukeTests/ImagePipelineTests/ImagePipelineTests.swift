@@ -2,6 +2,7 @@
 //
 // Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
+#if canImport(Darwin)
 import XCTest
 import Combine
 @testable import Nuke
@@ -631,3 +632,4 @@ class ImagePipelineTests: XCTestCase {
     }
 #endif
 }
+#endif

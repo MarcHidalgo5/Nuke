@@ -2,6 +2,7 @@
 //
 // Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
+#if canImport(Darwin)
 #if !os(watchOS)
 import AVKit
 #endif
@@ -130,3 +131,4 @@ public struct ImageContainer: @unchecked Sendable {
         }
     }
 }
+#endif

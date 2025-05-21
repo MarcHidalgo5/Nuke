@@ -2,6 +2,7 @@
 //
 // Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
+#if canImport(Darwin)
 import Foundation
 
 /// Provides basic networking using `URLSession`.
@@ -230,3 +231,4 @@ private final class _DataLoader: NSObject, URLSessionDataDelegate, @unchecked Se
         }
     }
 }
+#endif

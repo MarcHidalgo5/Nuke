@@ -2,6 +2,7 @@
 //
 // Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
+#if canImport(Darwin)
 import XCTest
 @testable import Nuke
 
@@ -158,3 +159,4 @@ class ImageProcessorsRoundedCornersTests: XCTestCase {
         XCTAssertEqual(processor.description, "RoundedCorners(radius: 16.0 pixels, border: Border(color: #FF0000, width: 2.0 pixels))")
     }
 }
+#endif
