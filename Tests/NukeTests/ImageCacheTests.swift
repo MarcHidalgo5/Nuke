@@ -422,4 +422,4 @@ class InternalCacheTTLTests: XCTestCase {
         XCTAssertNotNil(cache.value(forKey: 1))
     }
 }
-#endif#if canImport(Darwin)
+#endif
